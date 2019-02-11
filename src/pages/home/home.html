@@ -1,14 +1,130 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+<ion-content padding id="page-aqua-home">
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <div id="container-aqua-home">
+
+    <ion-grid>
+      <ion-row>
+        <ion-col col-12>
+          <label class="home-title-label">Book your Cans</label>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col col-12>
+          <img id="home-water-can" src="../assets/imgs/water-can.png" />
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col col-4 (click)="addCount()">
+          <img class="item-count" src="../assets/imgs/icon-plus.png" />
+        </ion-col>
+        <ion-col col-4>
+          <label class="home-title-label">{{itemCount}}</label>
+        </ion-col>
+        <ion-col col-4 (click)="reduceCount()">
+          <img class="item-count" src="../assets/imgs/icon_minus.png" />
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col col-2>
+
+        </ion-col>
+        <ion-col col-4>
+          <label class="home-content-label">Cost</label>
+        </ion-col>
+        <ion-col col-4>
+          <label class="home-content-label">Rs. {{totalCost}}</label>
+        </ion-col>
+        <ion-col col-2>
+
+        </ion-col>
+      </ion-row>
+      <hr>
+      <ion-row>
+        <ion-col col-12>
+          <label class="home-content-label">Get it by</label>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-6>
+          <ion-select placeholder="Select Day" value="today" okText="Okay" cancelText="Dismiss">
+            <ion-option value="today"><label class="home-content-label">Today</label></ion-option>
+            <ion-option value="tomorrow"><label class="home-content-label">Tomorrow</label></ion-option>
+          </ion-select>
+        </ion-col>
+        <ion-col col-6>
+          <ion-select placeholder="Select Time" value="evening" okText="Okay" cancelText="Dismiss">
+            <ion-option class="home-content-label" value="moring"><label class="home-content-label">Morning</label></ion-option>
+            <ion-option class="home-content-label" value="noon"><label class="home-content-label">Noon</label></ion-option>
+            <ion-option class="home-content-label" value="evening"><label class="home-content-label">Evening</label></ion-option>
+          </ion-select>
+        </ion-col>
+      </ion-row>
+      <hr>
+      <ion-row>
+        <ion-col col-4 class="user-details">
+          <label class="home-content-label">Name</label>
+        </ion-col>
+        <ion-col col-8>
+          <ion-input placeholder="Enter your Name" class="home-content-label" [(ngModel)]="currentUser"></ion-input>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col col-4 class="user-details">
+          <label class="home-content-label">Phone</label>
+        </ion-col>
+        <ion-col col-8>
+          <ion-input type="number" class="home-content-label" [(ngModel)]="currentPhoneNumber"></ion-input>
+        </ion-col>
+      </ion-row>
+
+      <hr />
+      <ion-row>
+        <ion-col col-12 class="user-details">
+          <ion-label class="home-content-label"><u>Address</u></ion-label>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+          <ion-col col-8>
+              <ion-label class="home-content-label">Get current location</ion-label>
+          </ion-col>
+          <ion-col col-4>
+            <ion-checkbox id="current-loc-check" color="dark" checked="false" ></ion-checkbox>
+          </ion-col>
+        </ion-row>
+
+      <ion-row>
+        <ion-col col-12 >
+          <ion-item>
+            <ion-textarea placeholder="Enter more information here..."></ion-textarea>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+          <ion-col col-12 >
+            <ion-item>
+              <ion-input placeholder="Landmark"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col col-12 >
+                <button (click)="placeOrder()" class="order-button">Order</button>
+            </ion-col>
+          </ion-row>
+
+    </ion-grid>
+
+
+
+
+
+  </div>
+
 </ion-content>

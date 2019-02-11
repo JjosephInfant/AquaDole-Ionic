@@ -1,0 +1,64 @@
+page-login {
+    #page-aqua-login {
+        background: url("../assets/imgs/login_bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .custom-label-style {
+        text-decoration: underline;
+      };
+
+      .login-box {
+        margin-top: 10em;
+      }
+
+      .app-name {
+        color: #B70064;
+        text-align: center;
+        font-size: 1.5em;
+      }
+
+      .login-text {
+          color: rgb(249, 249, 253);
+          font-weight: 700;
+          font-size: 1.5em;
+          text-shadow: 2px 2px 2px rgb(14, 6, 122)!important;
+      }
+
+      ion-input {
+        border-bottom: 1px solid #051044 !important;
+        border-radius: 15px;
+        box-shadow: 0 8px 6px -6px rgb(33, 5, 85);      }
+
+      #forgot-password {
+          margin-top : 2em;
+      }
+
+      #app-logo-login {
+        margin-top: 18%;
+        //height: 158pt;
+      }
+      .login-button {
+          width: 100%;
+          padding: 1.5em;
+          border-radius: 15px;
+          color: floralwhite;
+          font-weight: bolder;
+          margin-top: 5em;
+          font-size: 1.5em;
+          text-shadow: 2px 2px 2px rgb(14, 6, 122)!important;
+          /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#76aec1+13,76aec1+26,1895bf+43,1895bf+70,1895bf+70&0+0,0.8+15,1+81,0.8+85,0+100 */
+          background: -moz-linear-gradient(top, rgba(118,174,193,0) 0%, rgba(118,174,193,0.69) 13%, rgba(118,174,193,0.8) 15%, rgba(118,174,193,0.83) 26%, rgba(24,149,191,0.88) 43%, rgba(24,149,191,0.97) 70%, rgba(24,149,191,1) 81%, rgba(24,149,191,0.8) 85%, rgba(24,149,191,0) 100%); /* FF3.6-15 */
+          background: -webkit-linear-gradient(top, rgba(118,174,193,0) 0%,rgba(118,174,193,0.69) 13%,rgba(118,174,193,0.8) 15%,rgba(118,174,193,0.83) 26%,rgba(24,149,191,0.88) 43%,rgba(24,149,191,0.97) 70%,rgba(24,149,191,1) 81%,rgba(24,149,191,0.8) 85%,rgba(24,149,191,0) 100%); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to bottom, rgba(118,174,193,0) 0%,rgba(118,174,193,0.69) 13%,rgba(118,174,193,0.8) 15%,rgba(118,174,193,0.83) 26%,rgba(24,149,191,0.88) 43%,rgba(24,149,191,0.97) 70%,rgba(24,149,191,1) 81%,rgba(24,149,191,0.8) 85%,rgba(24,149,191,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0076aec1', endColorstr='#001895bf',GradientType=0 ); /* IE6-9 */      }
+
+      #phone-number {
+        margin-top: 2em;
+      }
+
+      #user-name {
+        margin-top: 2em;
+      }
+}
